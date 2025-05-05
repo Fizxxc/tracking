@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: link-view
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
