@@ -1,0 +1,29 @@
+<!-- public/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Dashboard</h2>
+    <form id="generateForm" method="POST" action="/generate">
+      <input type="url" name="original" placeholder="Masukkan link asli" required />
+      <button type="submit">Generate Link</button>
+    </form>
+    <h3>Link Anda:</h3>
+    <ul id="linkList">
+      <!-- Daftar link dari server -->
+    </ul>
+  </div>
+  <script>
+    // public/dashboard.js
+// Ini hanya kerangka jika nanti ingin pakai fetch AJAX
+document.addEventListener('DOMContentLoaded', () => {
+  // Misalnya fetch list link dari API atau handle interaksi
+});
+  </script>
+</body>
+</html>
